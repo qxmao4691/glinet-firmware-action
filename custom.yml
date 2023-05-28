@@ -6,7 +6,14 @@ feeds:
     branch: master
 packages:
   - luci-app-mwan3
-
+  - luci-app-argon-config
+  - luci-app-frpc
+  - luci-app-frps
+  - luci-app-passwall
+  - luci-app-ramfree
+  - luci-app-turboacc
+  - luci-app-zerotier
+  - luci-app-openclash
 
 
 diffconfig: |
