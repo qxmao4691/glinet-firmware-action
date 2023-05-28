@@ -1,21 +1,34 @@
 feeds:
-  - name: custom
-    path: ../feeds_dir/custom
-  - name: helloworld
-    uri: https://github.com/fw876/helloworld.git
+  - name: kenzok8_packages
+    uri: https://github.com/kenzok8/openwrt-packages.git
     branch: master
+    revision: 8e9edd81eec413157df51c9e1877eb81438ad0f7
+  - name: immortalwrt_luci
+    uri: https://github.com/immortalwrt/luci.git
+    branch: openwrt-21.02
+    revision: adfcac037ae5075d183bbb9e407a0ef908849cfe
+  - name: small_package
+    uri: https://github.com/kenzok8/small-package.git
+    branch: main
+    revision: 0e8232663be410d3b0de56d070ea52e2d91efed4
 packages:
-  - luci-app-mwan3
+  - luci-theme-argon
   - luci-app-argon-config
-  - luci-app-frpc
-  - luci-app-frps
-  - luci-app-passwall
   - luci-app-ramfree
-  - luci-app-turboacc
-  - luci-app-zerotier
+  - luci-app-wol
+  - luci-app-diskman
+  - luci-app-smartdns
   - luci-app-openclash
-
-
+  - luci-app-aria2
+  - luci-app-zerotier
+  - luci-app-turboacc
+  - luci-app-xlnetacc
+  - luci-app-cpufreq
+  - luci-app-ttyd
+  - luci-app-serverchan
+  - luci-app-transmission
+  - luci-app-passwall
+  - luci-app-ssr-plus
 diffconfig: |
   CONFIG_PACKAGE_wpad-basic=n
   CONFIG_PACKAGE_wpad=n
